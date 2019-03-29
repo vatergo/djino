@@ -1,0 +1,122 @@
+.header
+    background: url(../img/background1.jpg)   no-repeat center top / cover 
+    height: 100vh
+    overflow: hidden
+
+.headline
+    display: block
+    width: 100%
+    margin-top: 3.2vh
+    &__logo
+        display: inline-flex
+        float: left
+        align-items: center
+    &__topic
+        float: right
+        margin-right: 42%
+        margin-top: 1vh
+        text-transform: uppercase
+        +bold
+        font-size: 12px
+        letter-spacing: 2.32px
+
+
+.logo
+    &__img
+        filter: invert(100)
+    &__text
+        margin-left: 9px
+        font-size: 16px
+        margin-bottom: 2px
+
+.banner 
+    font-size: 11.99vh
+    +captionBold
+    max-width: 71%
+    text-align: center
+    line-height: 11.99vh
+    margin-top: 14.2vh
+
+    
+@media screen and (max-width: 1366px)
+    .banner
+        font-size: 5.85vw
+        line-height: 5.85vw
+
+
+.checkout-form
+    display: flex
+    flex-direction: column
+    width: 66.3%
+    height: 126px
+    border-radius: 8px
+    background: rgba(51, 51, 51, 0.9)
+    margin-top: 7.7vh
+    &__input-block
+        height: 81px
+        border-radius: 8px
+        background: #fff
+        
+    &__sub-block
+        height: 45px
+
+.input-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__input
+        border: none
+        font-size: 24px
+        color: #333
+        margin-left: 36px
+        width: 66.2%
+    &__input:focus
+        outline: none
+    &__check-button
+        width: 21.8%
+        height: 53px
+        margin-right: 15px
+        border-radius: 8px
+        background-color: #5f6062
+        color: #fff
+        border: none
+        font-size: 22px
+        cursor: pointer
+    &__check-button:active
+        outline: none
+        background: #434446
+    &__check-button:focus 
+        outline: none
+    
+.sub-block
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    &__reg
+        color: #77b53c
+        margin-left: 5px
+
+.create-button
+    display: inline-block
+    width: 265px
+    height: 56px
+    border-radius: 5px
+    background-color: #77b53c
+    text-decoration: none
+    color: #fff
+    font-size: 24px
+    +bold
+    text-align: center
+    line-height: 56px
+    margin-top: 4vh
+
+.create-button:active
+    background: #679c35
+
+.scroll
+    margin-top: 7.2vh
+        
+
+
+    

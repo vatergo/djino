@@ -1,0 +1,12 @@
+@mixin bold {
+    font-family: 'PT Sans', sans-serif; 
+    font-weight: bold;
+}
+
+@mixin regular {
+    font-family: 'PT Sans', sans-serif; 
+}
+
+@mixin captionBold {
+    font-family: 'PT Sans Caption', sans-serif;
+}
