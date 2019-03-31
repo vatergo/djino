@@ -13,12 +13,11 @@
 
 <body>
     <nav class="navbar">
-        <a class="navbar__item" href="#up"></a>
-        <a class="navbar__item" href="#center"></a>
-        <a class="navbar__item" href="#bottom"></a>
+        <a class="navbar__item" href=".header" onclick="onClickAnchor(this)"></a>
+        <a class="navbar__item" href=".main" onclick="onClickAnchor(this)"></a>
+        <a class="navbar__item" href=".footer" onclick="onClickAnchor(this)"></a>
     </nav>
     <header class="header">
-        <a name="up"></a>
         <div class="container">
             <div class="headline">
                 <div class="logo headline__logo">
@@ -28,14 +27,14 @@
                 <span class="headline__topic">Только до 31 января</span>
             </div>
             <h1 class="banner">Честная цена за домен .RU — 39₽</h1>
-            <form action="#" class="checkout-form">
+            <form class="checkout-form" onsubmit="onSubmit()">
                 <div class="input-block checkout-form__input-block">
                     <input class="input-block__input" type="text" placeholder="Домен">
                     <button type="submit" class="input-block__check-button">Проверить</button>
                 </div>
                 <div class="sub-block checkout-form__sub-block">
-                    <span class="sub-block__info">Домен example.ru — свободен.</span>
-                    <a href="#" class="sub-block__reg">Зарегистрировать за 39₽</a>
+                    <span class="sub-block__info"></span>
+                    <a href="#" class="sub-block__reg"></a>
                 </div>
             </form>
             <a href="#" class="create-button">Создать аккаунт</a>
@@ -45,7 +44,6 @@
         </div>
     </header>
     <section class="main">
-        <a name="center"></a>
         <div class="container">
             <div class="headline">
                 <div class="logo headline__logo">
@@ -60,45 +58,40 @@
             <h2 class="topic">Зарегистрировав у нас домен, вы получите</h2>
             <div class="feature-list">
                 <div class="line feature-list__line">
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Сайт-визитка')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/businesscard.svg" alt="Сайт-визитка">
                         <span class="item__name">Сайт-визитка</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Поддержка DNS')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/dns.svg" alt="Поддержка DNS">
                         <span class="item__name">Поддержка DNS</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Сертификат о владении доменом')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/certificate.svg" alt="Сертификат о владении доменом">
                         <span class="item__name">Сертификат о владении доменом</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Автопродление')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/autorenewal.svg" alt="Автопродление">
                         <span class="item__name">Автопродление</span>
                     </div>
                 </div>
                 <div class="info feature-list__info">
-                    <span class="info__text">Для любого вашего домена, зарегистрированного на «Джино», вы можете в
-                        несколько кликов создать
-                        простую страницу-визитку. Это удобно, если ваш основной сайт еще не готов, или если домен вам
-                        нужен только для почты. Вы можете разместить здесь краткую информацию о себе или вашем бизнесе,
-                        ссылки на аккаунты в соцсетях и любые другие сайты. Создание и поддержка базового варианта
-                        сайта-визитки абсолютно бесплатны.</span>
+                    <span class="info__text"></span>
                 </div>
                 <div class="line feature-list__line">
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Облачное хранилище на 20 Гб')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/cloud.svg" alt="Облачное хранилище на 20 Гб">
                         <span class="item__name">Облачное хранилище на 20 Гб</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Бесплатный SSL-сертификат')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/freessl.svg" alt="Бесплатный SSL-сертификат">
                         <span class="item__name">Бесплатный SSL-сертификат</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('DNSSEC в один клик')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/dnssec.svg" alt="DNSSEC в один клик">
                         <span class="item__name">DNSSEC в один клик</span>
                     </div>
-                    <div class="item line__item">
+                    <div class="item line__item" onmouseover="onMouseOver('Перенаправление')" onmouseout="onMouseOut()">
                         <img class="item_img" src="img/redirect.svg" alt="Перенаправление">
                         <span class="item__name">Перенаправление</span>
                     </div>
@@ -108,7 +101,6 @@
         </div>
     </section>
     <footer class="footer">
-        <a name="bottom"></a>
         <div class="container">
             <div class="headline">
                 <div class="logo headline__logo">
@@ -135,6 +127,7 @@
                     class="trademark-description__info">Правовая информация.</a></h3>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
