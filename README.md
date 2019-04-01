@@ -1,3 +1,3 @@
 # Промо-страница Джино домены
 
-[Просмотр](vatergo.github.com/jino "Тык!")
+[Просмотр](https://vatergo.github.com/jino "Тык!")
